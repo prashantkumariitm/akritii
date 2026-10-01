@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Just For You ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background hearts -->
+    <div id="hearts-container"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            Akriti <span>♥</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#photos">Photos</a>
+            <a href="#message">Message</a>
+            <a href="#question">Us</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-glow"></div>
+
+        <div class="hero-content">
+
+            <div class="mini-heart">♥</div>
+
+            <p class="eyebrow">
+                I made something for you
+            </p>
+            
+
+            <h1>
+                AKRITI <span> आकृति</span>
+            </h1>
+
+            <p class="typing-text">
+                You make ordinary moments feel special.
+            </p>
+
+            <button class="primary-btn" onclick="openJourney()">
+                Start Our Little Journey
+                <span>→</span>
+            </button>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div>↓</div>
+        </div>
+
+    </section>
+
+
+    <!-- PHOTO SECTION -->
+    <section id="photos" class="photos-section">
+
+        <div class="section-heading">
+            <p>Some beautiful moments</p>
+            <h2>Our Little <span>Gallery</span></h2>
+        </div>
+
+        <div class="photo-grid">
+
+            <div class="photo-card photo-large">
+                <img src="IMG_20260903_222608.jpg.jpeg" alt="Beautiful memory">
+
+                <div class="photo-overlay">
+                    <span>01</span>
+                    <h3>A beautiful moment</h3>
+                </div>
+            </div>
+
+
+            <div class="photo-card">
+                <img src="InShot_20260903_225829555.png" alt="Beautiful memory">
+
+                <div class="photo-overlay">
+                    <span>02</span>
+                    <h3>One of my favourites</h3>
+                </div>
+            </div>
+
+
+            <div class="photo-card">
+                <img src="InShot_20260903_22582955544.png" alt="Beautiful memory">
+
+                <div class="photo-overlay">
+                    <span>03</span>
+                    <h3>A moment worth keeping</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="photo-note">
+            Every picture has a story. These are just a few of mine. ❤️
+        </p>
+
+    </section>
+
+
+    <!-- LOVE METER -->
+    <section class="meter-section">
+
+        <div class="section-heading">
+            <p>Just for fun</p>
+            <h2>Our Love <span>Meter</span></h2>
+        </div>
+
+        <div class="meter-box">
+
+            <div class="meter-heart">
+                ❤️
+            </div>
+
+            <div class="meter-bar">
+                <div id="loveProgress"></div>
+            </div>
+
+            <div class="meter-number">
+                <span id="loveNumber">0</span>%
+            </div>
+
+            <p id="meterText">
+                Calculating...
+            </p>
+
+            <button class="secondary-btn" onclick="startLoveMeter()">
+                Check Again ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MESSAGE -->
+    <section id="message" class="message-section">
+
+        <div class="section-heading">
+            <p>From my heart</p>
+            <h2>A Little <span>Message</span></h2>
+        </div>
+
+        <div class="letter">
+
+            <div class="letter-top">
+                <span>To Akriti</span>
+                <span>♥</span>
+            </div>
+
+            <div class="letter-content">
+
+                <p class="hello">
+                    Hey Akriti...
+                </p>
+
+                <p>
+                    I don't know if a website can actually explain
+                    how special someone is, but I wanted to try.
+                </p>
+
+                <p>
+                    There are people who simply become a part of
+                    your everyday life, and then there are people
+                    who make those everyday moments worth remembering.
+                </p>
+
+                <p>
+                    You are one of those people.
+                </p>
+
+                <p>
+                    Thank you for all the little conversations,
+                    random laughs, silly moments and everything
+                    in between.
+                </p>
+
+                <p class="big-message">
+                    You mean more to me than you probably realise. ❤️
+                </p>
+
+                <p class="signature">
+                    With lots of love,<br>
+                    <span>Prashant ❤️</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CLICKABLE CARDS -->
+    <section class="reasons-section">
+
+        <div class="section-heading">
+            <p>Click them</p>
+            <h2>Reasons Why You're <span>Special</span></h2>
+        </div>
+
+        <div class="reason-grid">
+
+            <div class="reason-card" onclick="showReason(this)">
+                <div class="reason-icon">😊</div>
+                <h3>Akriti Smile</h3>
+                <p class="hidden-reason">
+                    Somehow it makes everything feel a little better.
+                </p>
+                <span class="click-text">Click me</span>
+            </div>
+
+
+            <div class="reason-card" onclick="showReason(this)">
+                <div class="reason-icon">✨</div>
+                <h3>Akriti Vibe</h3>
+                <p class="hidden-reason">
+                    There is something about you that is simply different.
+                </p>
+                <span class="click-text">Click me</span>
+            </div>
+
+
+            <div class="reason-card" onclick="showReason(this)">
+                <div class="reason-icon">🫶</div>
+                <h3>Akriti's Heart</h3>
+                <p class="hidden-reason">
+                    Your kindness is one of the things I appreciate most.
+                </p>
+                <span class="click-text">Click me</span>
+            </div>
+
+
+            <div class="reason-card" onclick="showReason(this)">
+                <div class="reason-icon">🌙</div>
+                <h3>Akriti's Late Talks</h3>
+                <p class="hidden-reason">
+                    Somehow we can talk for hours and still have more to say.
+                </p>
+                <span class="click-text">Click me</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUESTION -->
+    <section id="question" class="question-section">
+
+        <div class="question-content">
+
+            <div class="question-heart">
+                💗
+            </div>
+
+            <p class="eyebrow">
+                Okay... one important question
+            </p>
+
+            <h2>
+                Do you <span>love me?</span>
+            </h2>
+
+            <p class="question-subtitle">
+                Think carefully before answering... 👀
+            </p>
+
+
+            <div class="answer-buttons">
+
+                <button id="yesBtn" onclick="yesAnswer()">
+                    YES ❤️
+                </button>
+
+                <button id="noBtn" onmouseover="moveNoButton()" onclick="moveNoButton()">
+                    NO 😏
+                </button>
+
+            </div>
+
+            <p id="answerText"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL SURPRISE -->
+    <section class="final-section">
+
+        <div class="final-card">
+
+            <div class="final-decoration">♥</div>
+
+            <p>
+                One last surprise...
+            </p>
+
+            <h2>
+                There's always a little more.
+            </h2>
+
+            <button class="surprise-btn" onclick="openSurprise()">
+                Open It 💌
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SURPRISE MODAL -->
+    <div id="surpriseModal" class="modal">
+
+        <div class="modal-box">
+
+            <button class="close-btn" onclick="closeSurprise()">
+                ×
+            </button>
+
+            <div class="modal-heart">
+                ❤️
+            </div>
+
+            <h2>
+                A K R I T I <span>♥</span>
+            </h2>
+
+            <p>
+                No matter how many days pass,
+                I hope we always keep the same smiles,
+                silly conversations and beautiful memories.
+            </p>
+
+            <div class="love-message">
+                Stay exactly the way you are. ❤️
+            </div>
+
+            <button class="heart-burst-btn" onclick="heartBurst()">
+                Send Love 💕
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        Made with <span>♥</span> PRASHANT.
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
